@@ -26,6 +26,15 @@ export interface LabResult {
     warnings?: Array<string>;
 }
 
+export interface Labels {
+    [key: string]: string;
+}
+
+export interface TestCaseInputConfig {
+    logLevel: string;
+    targetLabels?: Labels;
+}
+
 export interface TestCase {
     start(): Promise<void>;
     result(): Promise<LabResult>;
