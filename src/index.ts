@@ -25,3 +25,8 @@ export interface LabResult {
     error?: string;
     warnings?: Array<string>;
 }
+
+export interface TestCase {
+    start(): Promise<void>;
+    result(): Promise<LabResult>;
+}
