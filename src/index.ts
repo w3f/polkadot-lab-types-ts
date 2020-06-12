@@ -33,6 +33,7 @@ export interface Labels {
 export interface TestCaseInputConfig {
     logLevel: string;
     targetLabels?: Labels;
+    port?: number;
 }
 
 export interface TestCase {
