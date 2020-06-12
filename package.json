@@ -1,0 +1,28 @@
+{
+  "name": "@w3f/polkadot-lab-types",
+  "version": "0.1.0",
+  "description": "Polkadot Lab types shared with Test Cases",
+  "repository": "git@github.com:w3f/polkadot-lab-types-ts.git",
+  "author": "W3F Infrastructure Team <devops@web3.foundation>",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc --build tsconfig.json",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.6.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
