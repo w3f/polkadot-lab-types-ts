@@ -1,5 +1,8 @@
-export type Status = 'success' | 'error' | 'in_progress';
-
+export enum Status {
+    Success = 'success',
+    Error = 'error',
+    InProgress = 'in_progress'
+}
 export type Value = [number, string];
 
 export type Metric = {
@@ -16,7 +19,7 @@ export type Data = Array<DataItem>;
 export interface LabResult {
     name: string;
     startTime: string;
-    endTime: string;
+    endTime?: string;
     status: Status;
 
     data: Data;
