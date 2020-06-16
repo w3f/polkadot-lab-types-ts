@@ -3,14 +3,15 @@ export enum Status {
     Error = 'error',
     InProgress = 'in_progress'
 }
-export type Value = [number, string];
+
+export type Value = [string, [string]];
 
 export type Metric = {
     name: string;
 }
 
 export interface DataItem {
-    metric: Metric;
+    metric?: Metric;
     values: Array<Value>;
 }
 
@@ -20,6 +21,8 @@ export interface LabResult {
     name: string;
     startTime: string;
     endTime?: string;
+    description?: string;
+
     status: Status;
 
     data: Data;
@@ -37,6 +40,7 @@ export interface TestCaseInputConfig {
     logLevel: string;
     targetLabels?: Labels;
     port?: number;
+    extra?: any;
 }
 
 export interface TestCase {
