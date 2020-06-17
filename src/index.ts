@@ -4,10 +4,10 @@ export enum Status {
     InProgress = 'in_progress'
 }
 
-export type Value = [string, [string]];
+export type Value = [string, string];
 
 export type Metric = {
-    name: string;
+    [labelName: string]: string;
 }
 
 export interface DataItem {
