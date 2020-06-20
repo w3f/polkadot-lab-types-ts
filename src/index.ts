@@ -46,7 +46,7 @@ export interface TestCaseInputConfig {
     logLevel: string;
     targetLabels?: Labels;
     port?: number;
-    prometheus: PrometheusConfig;
+    prometheus?: PrometheusConfig;
     extra?: any;
 }
 
