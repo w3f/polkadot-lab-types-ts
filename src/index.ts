@@ -12,7 +12,7 @@ export type Metric = {
 
 export interface DataItem {
     metric?: Metric;
-    values: Array<Value>;
+    value: Value;
 }
 
 export type Data = Array<DataItem>;
