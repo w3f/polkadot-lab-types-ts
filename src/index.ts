@@ -36,10 +36,17 @@ export interface Labels {
     [key: string]: string;
 }
 
+export interface PrometheusConfig {
+    name: string;
+    metric: string;
+    period: number;
+}
+
 export interface TestCaseInputConfig {
     logLevel: string;
     targetLabels?: Labels;
     port?: number;
+    prometheus: PrometheusConfig;
     extra?: any;
 }
 
