@@ -39,7 +39,7 @@ export interface Labels {
 export interface PrometheusConfig {
     name: string;
     query: string;
-    period: number;
+    period?: number;
 }
 
 export interface TestCaseInputConfig {
