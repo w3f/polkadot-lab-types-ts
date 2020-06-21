@@ -1,6 +1,6 @@
 {
   "name": "@w3f/polkadot-lab-types",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Polkadot Lab types shared with Test Cases",
   "repository": "git@github.com:w3f/polkadot-lab-types-ts.git",
   "author": "W3F Infrastructure Team <devops@web3.foundation>",
