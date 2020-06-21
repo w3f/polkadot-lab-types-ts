@@ -38,7 +38,7 @@ export interface Labels {
 
 export interface PrometheusConfig {
     name: string;
-    metric: string;
+    query: string;
     period: number;
 }
 
